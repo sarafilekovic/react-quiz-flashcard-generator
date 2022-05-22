@@ -1,0 +1,294 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+:root{
+  --primarycolor: #047aed;
+  --secondarycolor: #1c3fa8;
+  --thirdcolor: #002240;
+  --fourthcolor: #f4f4f4;
+}
+body{
+  font-family: 'Tahoma';
+  color: #333;
+  line-height: 1.6; /*how much distance between lines above and below*/
+}
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 75px;
+  
+}
+
+.title{
+  font-size: 24px;
+  float: right;
+}
+
+li {
+  float: left;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  top: -25px;
+  bottom: -25px;
+  background-color: #333;
+  color: white;
+  height: 100px;
+}
+
+footer h4{
+  position: relative;
+  top: 20px;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  color: white;
+}
+h1, h2{
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0px; /*top and bottom 10px, left and right 0px*/
+}
+p{
+  margin: 10px 0px;
+}
+img{
+  width: 100%;
+}
+
+.brain{
+  position: relative;
+  top: -80px;
+}
+.main{
+  height: 83vh;
+  background-color: var(--primarycolor);
+  color: white;
+  position: relative;
+  top: -20px;
+}
+
+.main h1{
+  font-size: 2.2rem;
+}
+.main p{
+  margin: 20px 0px;
+}
+.main .grids{
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  grid-gap: 35px;
+}
+.main-form{
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+.main-form .form-control{
+  margin: 30px 0px;/*top and bottom margin to separate individual inputs*/
+}
+.footer {
+  height: 23vh;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-size: 25px;
+ }
+
+ .quiz-instructions, .flashcard-instructions {
+   text-align: center;
+   padding: 70px;
+   font-weight: 600;
+ }
+
+ .quiz-settings {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  justify-content: center;
+ }
+
+ .start-button-container {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+ }
+
+ .display-quiz-page {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-top: 60px;
+  border: 3px solid #333;
+ }
+
+ .question-choices > button {
+   padding: 20px 30px;
+   margin: 10px 10px;
+   font-size: 24px;
+ }
+
+ .next-question {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+ }
+
+/*UTILITIES*/
+.contains{
+  max-width: 1100px;  /*title and nav elements*/
+  margin: 0 auto; /*stay in one place when page stretches*/ 
+  overflow: auto; /*gets rid of top margin so background goes to top*/
+  padding: 0px 40px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.grids{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.button{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primarycolor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.button-outline{
+  background-color: transparent;
+  border: 1px solid white;
+}
+.button:hover{
+  transform:scale(0.98);
+  color: white;
+  transition: 0.5s;
+}
+
+.grids-3{
+  grid-template-columns: repeat(3, 1fr);
+}
+.text-center{
+  text-align: center;
+}
+.bg-primary{
+  background-color: var(--primarycolor);
+  color: white;
+} 
+.bg-secondary{
+  background-color: var(--secondarycolor);
+  color: white;
+} 
+.bg-dark,
+.button-dark{
+  background-color: var(--thirdcolor);
+  color: white;
+} 
+.bg-light{
+  background-color: var(--fourthcolor);
+  color: #333;
+} 
+.lead{
+  font-size: 20px;
+}
+.xl{
+  font-size: 4rem;
+}
+.large{
+  font-size: 3rem;
+}
+.medium{
+  font-size: 2rem;
+}
+.small{
+  font-size: 1rem;
+}
+/*MARGIN*/
+.mtb-1{
+  margin: 1rem 0;
+}
+.mtb-2{
+  margin: 1.5rem 0;
+}
+.mtb-3{
+  margin: 3rem 0;
+}
+.mtb-4{
+  margin: 4rem 0;
+}
+.m-1{
+  margin: 1rem;
+}
+.m-2{
+  margin: 1.5rem;
+}
+.m-3{
+  margin: 3rem;
+}
+.m-4{
+  margin: 4rem;
+}
+/*PADDING*/
+.ptb-1{
+  padding: 1rem 0;
+}
+.ptb-2{
+  padding: 1.5rem 0;
+}
+.ptb-3{
+  padding: 3rem 0;
+}
+.ptb-4{
+  padding: 4rem 0;
+}
+.p-1{
+  padding: 1rem;
+}
+.p-2{
+  padding: 1.5rem;
+}
+.p-3{
+  padding: 3rem;
+}
+.p-4{
+  padding: 4rem;
+}
